@@ -362,7 +362,8 @@ async function CreateActorWithType(event, data, tokenImageData, type) {
     {
         name: actorName,
         type: createdType,
-        img: data.img
+        img: data.img,
+        prototype.textures.img: data.img
     });
     const actorData = foundry.utils.duplicate(actor.data);
 
